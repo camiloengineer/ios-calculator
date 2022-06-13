@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B2BAEEDF28515E06000DD797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAEEDE28515E06000DD797 /* AppDelegate.swift */; };
-		B2BAEEE128515E06000DD797 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAEEE028515E06000DD797 /* SceneDelegate.swift */; };
-		B2BAEEE328515E06000DD797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAEEE228515E06000DD797 /* ViewController.swift */; };
-		B2BAEEE628515E06000DD797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BAEEE428515E06000DD797 /* Main.storyboard */; };
 		B2BAEEE828515E0A000DD797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BAEEE728515E0A000DD797 /* Assets.xcassets */; };
 		B2BAEEEB28515E0A000DD797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BAEEE928515E0A000DD797 /* LaunchScreen.storyboard */; };
 		B2BAEEF628515E0A000DD797 /* iOS_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAEEF528515E0A000DD797 /* iOS_CalculatorTests.swift */; };
 		B2BAEF0028515E0A000DD797 /* iOS_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAEEFF28515E0A000DD797 /* iOS_CalculatorUITests.swift */; };
 		B2BAEF0228515E0A000DD797 /* iOS_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAEF0128515E0A000DD797 /* iOS_CalculatorUITestsLaunchTests.swift */; };
+		B2DEEC9E2852BB8500E39005 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEEC9C2852BB8500E39005 /* HomeViewController.swift */; };
+		B2DEEC9F2852BB8500E39005 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DEEC9D2852BB8500E39005 /* HomeViewController.xib */; };
+		B2EEB5412853DD4A00CFC05E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EEB5402853DD4A00CFC05E /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,6 @@
 /* Begin PBXFileReference section */
 		B2BAEEDB28515E06000DD797 /* iOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BAEEDE28515E06000DD797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2BAEEE028515E06000DD797 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2BAEEE228515E06000DD797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2BAEEE528515E06000DD797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2BAEEE728515E0A000DD797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2BAEEEA28515E0A000DD797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2BAEEEC28515E0A000DD797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,9 @@
 		B2BAEEFB28515E0A000DD797 /* iOS-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BAEEFF28515E0A000DD797 /* iOS_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CalculatorUITests.swift; sourceTree = "<group>"; };
 		B2BAEF0128515E0A000DD797 /* iOS_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2DEEC9C2852BB8500E39005 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B2DEEC9D2852BB8500E39005 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B2EEB5402853DD4A00CFC05E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				B2BAEEDE28515E06000DD797 /* AppDelegate.swift */,
-				B2BAEEE028515E06000DD797 /* SceneDelegate.swift */,
-				B2BAEEE228515E06000DD797 /* ViewController.swift */,
-				B2BAEEE428515E06000DD797 /* Main.storyboard */,
+				B2DEEC952852B51200E39005 /* View */,
+				B2DEEC942852B50400E39005 /* Controller */,
+				B2DEEC932852B4F900E39005 /* Model */,
+				B2DEEC962852B52300E39005 /* Util */,
+				B2BAEF0E28515ED1000DD797 /* Supporting Files */,
 				B2BAEEE728515E0A000DD797 /* Assets.xcassets */,
-				B2BAEEE928515E0A000DD797 /* LaunchScreen.storyboard */,
-				B2BAEEEC28515E0A000DD797 /* Info.plist */,
 			);
 			path = "iOS-Calculator";
 			sourceTree = "<group>";
@@ -125,6 +125,70 @@
 				B2BAEF0128515E0A000DD797 /* iOS_CalculatorUITestsLaunchTests.swift */,
 			);
 			path = "iOS-CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		B2BAEF0E28515ED1000DD797 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2BAEEEC28515E0A000DD797 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2DEEC932852B4F900E39005 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2DEEC942852B50400E39005 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2DEECA02852BB9A00E39005 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2DEEC952852B51200E39005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DEEC982852B5BB00E39005 /* Launch */,
+				B2DEEC992852B95D00E39005 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DEEC962852B52300E39005 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B2EEB5402853DD4A00CFC05E /* UIButtonExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B2DEEC982852B5BB00E39005 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				B2BAEEE928515E0A000DD797 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		B2DEEC992852B95D00E39005 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B2DEEC9D2852BB8500E39005 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B2DEECA02852BB9A00E39005 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B2DEEC9C2852BB8500E39005 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +297,7 @@
 			files = (
 				B2BAEEEB28515E0A000DD797 /* LaunchScreen.storyboard in Resources */,
 				B2BAEEE828515E0A000DD797 /* Assets.xcassets in Resources */,
-				B2BAEEE628515E06000DD797 /* Main.storyboard in Resources */,
+				B2DEEC9F2852BB8500E39005 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BAEEE328515E06000DD797 /* ViewController.swift in Sources */,
 				B2BAEEDF28515E06000DD797 /* AppDelegate.swift in Sources */,
-				B2BAEEE128515E06000DD797 /* SceneDelegate.swift in Sources */,
+				B2DEEC9E2852BB8500E39005 /* HomeViewController.swift in Sources */,
+				B2EEB5412853DD4A00CFC05E /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2BAEEE428515E06000DD797 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2BAEEE528515E06000DD797 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2BAEEE928515E0A000DD797 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +495,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R3HZ53HFV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "iOS-Calculator/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "iOS Calculator";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +523,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R3HZ53HFV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "iOS-Calculator/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "iOS Calculator";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
