@@ -234,7 +234,7 @@ final class HomeViewController: UIViewController {
     @IBAction func numberDecimalAction(_ sender: UIButton) {
         
         let currentTemp = auxTotalFormatter.string(from: NSNumber(value: temp))!
-        if !operating && currentTemp.count >= kMaxLength {
+        if resultLabel.text?.contains(kDecimalSeparator) ?? false || (!operating && currentTemp.count >= kMaxLength) {
             return
         }
         
@@ -283,7 +283,10 @@ final class HomeViewController: UIViewController {
     }
     
     // Limpia los valores
-    private func clear(){
+    private func clear() {
+        if operation == .none {
+            total = 0
+        }
         operation = .none
         operatorAC.setTitle("AC", for: .normal)
         if temp != 0 {
